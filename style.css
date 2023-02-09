@@ -1,12 +1,109 @@
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 html,
-body {
+body,
+p {
   margin: 0;
   padding: 0;
 }
 
 /* Add styles here! */
+
+.max-width-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  /* padding: 0 264px; */
+  color: hsl(0deg, 0%, 0%);
+}
+
+@media (max-width: 48rem) {
+  .max-width-wrapper {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (min-width: 48rem) {
+  main {
+    height: 100%;
+  }
+}
+
+.intro-chunk {
+  margin-top: 64px;
+  max-width: 415px;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.intro-chunk p {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.intro-chunk p:first-of-type {
+  margin-top: 48px;
+}
+
+.intro-chunk p:last-of-type {
+  margin-bottom: 64px;
+}
+
+.intro-chunk strong {
+  color: hsl(160deg, 100%, 30%);
+}
+
+main {
+  border-top: 8px solid hsl(0deg, 0%, 60%);
+  padding: 64px 0;
+  background-color: hsl(0deg, 0%, 40%);
+}
+
+.card {
+  margin-left: -24px;
+  margin-right: -24px;
+  padding: 8px 24px 24px 24px;
+  border-bottom: 8px solid hsl(0deg, 0%, 60%);
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.indented-heading {
+  margin: 0;
+  margin-left: -32px;
+  padding: 12px 24px 12px 32px;
+  border-bottom: 8px solid hsl(45deg, 100%, 40%);
+
+  width: fit-content;
+  background-color: hsl(45deg, 100%, 50%);
+
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.card p {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.card p:first-of-type {
+  margin-top: 22px;
+}
+
+.card p:last-of-type {
+  margin-top: 16px;
+}
+
+.card p em {
+  font-style: normal;
+}
